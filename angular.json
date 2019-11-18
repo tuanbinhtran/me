@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "whatILearned": {
+    "me": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/whatILearned",
+            "outputPath": "dist/me",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "whatILearned:build"
+            "browserTarget": "me:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "whatILearned:build:production"
+              "browserTarget": "me:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "whatILearned:build"
+            "browserTarget": "me:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "whatILearned:serve"
+            "devServerTarget": "me:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "whatILearned:serve:production"
+              "devServerTarget": "me:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "whatILearned"
+  "defaultProject": "me"
 }

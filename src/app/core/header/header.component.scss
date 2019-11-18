@@ -1,0 +1,39 @@
+$fontColor: rgba($color: #000000, $alpha: 0.7);
+$hover: rgba($color: #000000, $alpha: 0.1);
+$active: rgba($color: #000000, $alpha: 0.05);
+
+nav {
+  width: 100vw;
+  max-width: 100vw;
+
+  ul {
+    display: flex;
+    box-shadow: 0 -10px 15px black;
+
+    li {
+      cursor: pointer;
+      list-style-type: none;
+      padding: 10px;
+      color: $fontColor;
+	  font-size: 0.9em;
+	  user-select: none;
+
+      &.home {
+        font-size: 1em;
+        color: white;
+        box-shadow: -10px -10px 15px black;
+      }
+
+      &:hover {
+		background: $hover;
+		// border-bottom: solid $fontColor 1px;
+      }
+
+      &.active {
+		// background: $active;
+		border-bottom: solid $fontColor 1px;
+		// border-radius: 0.4rem;
+      }
+    }
+  }
+}
