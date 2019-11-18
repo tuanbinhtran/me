@@ -1,0 +1,15 @@
+:host {
+	display: block;
+	position: relative;
+	text-align: center;
+	
+	border-radius: 0.2em;
+	width: 100px;
+	height: 100px;
+	background: black;
+	p {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

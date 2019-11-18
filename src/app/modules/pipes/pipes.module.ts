@@ -4,6 +4,7 @@ import { StringManipulationComponent } from './pages/string-manipulation/string-
 import { PipesComponent } from './pages/pipes/pipes.component';
 import { PipesRoutingModule } from './pipes-routing.module';
 import { Routes, RouterModule } from '@angular/router';
+import { HighlightModule } from 'ngx-highlightjs';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { Routes, RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    PipesRoutingModule
+    PipesRoutingModule,
+    HighlightModule
   ],
 })
 export class PipesModule { }
