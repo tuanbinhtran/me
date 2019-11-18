@@ -15,11 +15,11 @@ export class HeaderComponent implements OnInit {
     },
     {
       path: '/pipes',
-      name: 'Pipes'
+      name: '🔧 Pipes'
     },
     {
       path: '/pipes/string-manipulation',
-      name: 'String Manipulation'
+      name: '📄 String Manipulation'
     }
   ];
 

@@ -25,14 +25,11 @@ nav {
       }
 
       &:hover {
-		background: $hover;
-		// border-bottom: solid $fontColor 1px;
+        background: $hover;
       }
 
       &.active {
-		// background: $active;
-		border-bottom: solid $fontColor 1px;
-		// border-radius: 0.4rem;
+        border-bottom: solid $fontColor 1px;
       }
     }
   }

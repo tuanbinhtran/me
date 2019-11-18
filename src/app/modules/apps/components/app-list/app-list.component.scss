@@ -1,0 +1,12 @@
+:host {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	justify-content: space-evenly;
+}
+
+app-app {
+	align-self: center;
+	display: block;
+	margin: 5px;
+}
