@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
   }
 
   @HostListener('mousedown', ['$event'])
-  onMouseDown($event) {
+  onMouseDown($event: MouseEvent) {
     this.isMouseDown = true;
 
     const {x, y} = this.elRef.nativeElement.getBoundingClientRect();
@@ -27,8 +27,8 @@ export class AppComponent implements OnInit {
     this.elRef.nativeElement.style.zIndex = 99;
     this.elRef.nativeElement.style.position = 'absolute';
 
-    this.elRef.nativeElement.style.left = x;
-    this.elRef.nativeElement.style.top = y;
+    this.elRef.nativeElement.style.left = $event.pageX - 50 + 'px';
+    this.elRef.nativeElement.style.top = $event.pageY - 50 + 'px';
   }
 
   @HostListener('mouseup', ['$event'])
