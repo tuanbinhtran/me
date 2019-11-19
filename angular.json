@@ -28,8 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "../nodes_modules/highlight.js/styles/github.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -123,8 +122,15 @@
               "devServerTarget": "me:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://tuanbinhtran.github.io/me/"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "me"
 }
