@@ -36,6 +36,5 @@ export class AppListComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    console.log(this.apps);
   }
 }

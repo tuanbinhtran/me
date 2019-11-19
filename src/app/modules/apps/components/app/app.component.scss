@@ -1,3 +1,5 @@
+@import '../../../../../variables.scss';
+
 :host {
 	display: block;
 	cursor: pointer;
@@ -7,7 +9,8 @@
 	border-radius: 0.2em;
 	width: 100px;
 	height: 100px;
-	background: black;
+	background: white;
+	box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.25);
 
 	p {
 		user-select: none;
@@ -18,6 +21,6 @@
 	}
 
 	&:hover {
-		background: grey;
+		background: $buttonHover;
 	}
 }
